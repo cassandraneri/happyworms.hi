@@ -28,3 +28,4 @@ const myobserver = new IntersectionObserver((entries) => {
     myobserver.observe(section);
   }); 
   
+  

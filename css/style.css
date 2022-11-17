@@ -332,9 +332,6 @@ section {
   color: white;
   min-height: 100vh;
 }
-.hero .container {
-  width: 100%;
-}
 .hero h1 {
   color: rgb(0, 0, 0);
   margin-bottom: 0.25em;
@@ -345,6 +342,7 @@ section {
 
 .hero-video {
   position: absolute;
+  width: 100%;
 }
 
 /* SITE-FOOTER */
