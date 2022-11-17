@@ -79,6 +79,22 @@ section {
     }
 }
 
+.video1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.hero video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* SITE-FOOTER */
 .site-footer {
     background-color: rgba(239, 229, 219, 1);

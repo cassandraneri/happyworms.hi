@@ -34,31 +34,6 @@
 
 /* ANIMATE SECTION 1 ON SCROLL */
 #section1.scroll-triggered[data-sectionstate="inactive"] {
-    .jd-contentblock-image {
-        transform: translateX(-200px);
-        opacity: 0;
-    }
-    .jd-contentblock-text {
-        transform: translateX(200px);
-        opacity: 0;
-    }
-}
-
-#section1.scroll-triggered[data-sectionstate="active"] {
-    .jd-contentblock-image {
-        opacity: 1;
-        transform: translateX(0px);
-        transition: all 1s ease-out .5s;
-    }
-    .jd-contentblock-text {
-        opacity: 1;
-        transform: translateX(0px);
-        transition: all 1s ease-out .5s;
-    }
-}
-
-/* ANIMATE SECTION 2 ON SCROLL */
-#section2.scroll-triggered[data-sectionstate="inactive"] {
 
     background-color: #888;
 
@@ -72,7 +47,7 @@
     }
 }
 
-#section2.scroll-triggered[data-sectionstate="active"] {
+#section1.scroll-triggered[data-sectionstate="active"] {
 
     background-color: #eee;
     transition: all 1s ease-out;
@@ -86,6 +61,32 @@
         opacity: 1;
         transform: translateY(0px);
         transition: all 1s ease-out;
+    }
+}
+
+
+/* ANIMATE SECTION 2 ON SCROLL */
+#section2.scroll-triggered[data-sectionstate="inactive"] {
+    .jd-contentblock-image {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .jd-contentblock-text {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+}
+
+#section2.scroll-triggered[data-sectionstate="active"] {
+    .jd-contentblock-image {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 1s ease-out .5s;
+    }
+    .jd-contentblock-text {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 1s ease-out .5s;
     }
 }
 
