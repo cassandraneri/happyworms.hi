@@ -37,11 +37,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BASE TEXT FONTS */
 body {
-  font-family: "Source Sans Pro", "new-hero", Arial, sans-serif;
+  font-family: "Omnes", "new-hero", Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", "Kepler", "Times New Roman", Times, serif;
+  font-family: "Bookmania", "Times New Roman", Times, serif;
 }
 
 /* BASE TYPOGRAPHY */
@@ -103,7 +103,7 @@ hr {
 /* SECTION HEADING */
 .section-heading {
   font-size: 1em;
-  font-family: "Source Sans Pro", "new-hero", Arial, sans-serif;
+  font-family: "Omnes", "new-hero", Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -338,6 +338,9 @@ section {
 }
 .hero p {
   margin: 1em auto;
+}
+.hero h4 {
+  padding-bottom: 1em;
 }
 
 .hero-video {
