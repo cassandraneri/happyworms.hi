@@ -139,7 +139,7 @@ body {
 /* CONTAINER */
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1600px;
   padding: 0 1em;
 }
 
@@ -711,65 +711,65 @@ section {
   }
 }
 /* ANIMATE SECTION 1 ON SCROLL */
-#section1.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-image {
-  -webkit-transform: translateX(-200px);
-          transform: translateX(-200px);
-  opacity: 0;
-}
-#section1.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-text {
-  -webkit-transform: translateX(200px);
-          transform: translateX(200px);
-  opacity: 0;
-}
-
-#section1.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: all 1s ease-out 0.5s;
-  transition: all 1s ease-out 0.5s;
-}
-#section1.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: all 1s ease-out 0.5s;
-  transition: all 1s ease-out 0.5s;
-}
-
-/* ANIMATE SECTION 2 ON SCROLL */
-#section2.scroll-triggered[data-sectionstate=inactive] {
+#section1.scroll-triggered[data-sectionstate=inactive] {
   background-color: #888;
 }
-#section2.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-image {
+#section1.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-image {
   -webkit-transform: translateY(200px);
           transform: translateY(200px);
   opacity: 0;
 }
-#section2.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-text {
+#section1.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-text {
   -webkit-transform: translateY(-200px);
           transform: translateY(-200px);
   opacity: 0;
 }
 
-#section2.scroll-triggered[data-sectionstate=active] {
+#section1.scroll-triggered[data-sectionstate=active] {
   background-color: #eee;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-#section2.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
+#section1.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-#section2.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
+#section1.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
+}
+
+/* ANIMATE SECTION 2 ON SCROLL */
+#section2.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-image {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  opacity: 0;
+}
+#section2.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-text {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  opacity: 0;
+}
+
+#section2.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease-out 0.5s;
+  transition: all 1s ease-out 0.5s;
+}
+#section2.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease-out 0.5s;
+  transition: all 1s ease-out 0.5s;
 }
 
 /* ANIMATE SECTION 3 ON SCROLL */
