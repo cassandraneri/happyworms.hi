@@ -343,21 +343,8 @@ section {
   margin: 1em auto;
 }
 
-.video1 {
+.hero-video {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.hero video {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 /* SITE-FOOTER */
