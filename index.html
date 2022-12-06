@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="https://use.typekit.net/ltz6vav.css">
     <link rel="stylesheet" href="https://use.typekit.net/ltz6vav.css">
 
+   <!-- SWIPER CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   
     <!-- MAIN CSS STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
@@ -41,23 +45,27 @@
 
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About Us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="wormbinsetup.html">Worm Bin Setup</a></li>
-                <li><a href="subpage4/index.html">Resources</a></li>
-                <li><a href="subpage5/index.html">Contact Us</a></li>
+                <li><a href="wormkits.html">Worm Kits</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="site-main">
         <div class="hero-video">
-        <lottie-player src="img/FruitVeggies.json" background="transparent"  speed="1"  style="width: 1920px; height: 1080px;" loop autoplay></lottie-player>
+            <div id="bm1"></div>
+        <!-- <lottie-player src="img/FruitVeggies.json" background="transparent"  speed="1"  style="width: 1920px; height: 1080px;" loop autoplay></lottie-player> -->
         </div>
         <section class="hero">
             <div class="container">
             <h1>Happy Worms</h1>
             <h4>for bountiful gardens.</h4>
-            <a href="resources.html"><img src="img/wormbutton.png" alt="Worm Button" width="500" height="500"></a>
+            <div class="icon-hover">
+            <a href="wormkits.html">
+            <img src="img/wormbutton.png" alt="Worm Button" width="500" height="500"></a>
+        </div>
             <!-- <a href="#section1" class="button">I'm here for worms.</a> -->
         </div>
         </section>
@@ -66,10 +74,10 @@
         <section id="section1" class="scroll-triggered">
             <div class="container">
                 <div class="row">
-                    <div class="one-half jd-contentblock-image">
+                    <!-- <div class="one-half jd-contentblock-image">
                     <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
-                    </div>
-                    <div class="one-half jd-contentblock-text">
+                    </div> -->
+                    <div class="one-whole jd-contentblock-text">
                     <h3>ABOUT US</h3>
                     <hr>
                     <p>Our goal is to promote the healthy hobbies of vermicomposting and gardening using the perfect worm composting starter kit. Worm composting is the proverbial win-win situation that gives you a convenient way to dispose of unwanted food waste and provides you happy worms which then produce the best organic fertilizer–or as gardeners say, “BLACK GOLD” for your garden. We are pro-mother-earth. We believe in sustainability and giving back to the planet. We approach life with intention and peace.</p>
@@ -78,85 +86,159 @@
             </div>
         </section>
 
-        <section id="section2" class="scroll-triggered">
-            <div class="container">
-                <div class="row">
-                    <div class="one-half jd-contentblock-image">
-                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
-                    </div>
-                        <div class="one-half jd-contentblock-text">
-                            <h3>WORM BIN SETUP</h3>
-                            <hr>
-                            <p>It's easy as 1, 2, 3...</p>
-                            <a href="#" class="button">WORM COMPOSTING 101</a>
-                        </div>
-                </div>
+        <main class="site-main">
+                <div class="container">
+                <h1>Easy Worm Bin Setup</h1>
             </div>
-        </section>
+            </section>
+    
+            <section id="section2" class="scroll-triggered">
+                <div class="container">
+                    <div class="row">
+                        <div class="one-half jd-contentblock-image">
+                            <img src="img/step1.png" width="500px" height="500px" alt="step1">
+                        </div>
+                            <div class="one-half jd-contentblock-text">
+                                <h3>STEP 1. BIN LOCATION</h3>
+                                <hr>
+                                <p>Select a shady area for your worm bin such as in your kitchen or a shady spot on your house/condo lanai.</p>
+                                <hr>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section2" class="scroll-triggered">
+                <div class="container">
+                    <div class="row">
+                        <div class="one-half jd-contentblock-image">
+                            <img src="img/step2.png" width="500px" height="500px" alt="step2">
+                        </div>
+                            <div class="one-half jd-contentblock-text">
+                                <h3>STEP 2. WORM BEDDING</h3>
+                                <hr>
+                                <p>Add 4-6 inches of moist bedding made from coconut coir, shredded brown cardboard, or shredded paper products (not bleached/colored).</p>
+                                <hr>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section2" class="scroll-triggered">
+                <div class="container">
+                    <div class="row">
+                        <div class="one-half jd-contentblock-image">
+                            <img src="img/step3.png" width="500px" height="500px" alt="step3">
+                        </div>
+                            <div class="one-half jd-contentblock-text">
+                                <h3>STEP 3. WORMS</h3>
+                                <hr>
+                                <p>Add 1-2 lbs of worms into the bin (depending on your bin size).</p>
+                                <hr>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section2" class="scroll-triggered">
+                <div class="container">
+                    <div class="row">
+                        <div class="one-half jd-contentblock-image">
+                            <img src="img/step4.png" width="500px" height="500px" alt="step4">
+                        </div>
+                            <div class="one-half jd-contentblock-text">
+                                <h3>STEP 4. FOOD WASTE</h3>
+                                <hr>
+                                <p>Feed chopped-up fruit and vegetable waste, coffee grounds, and grains in moderation such as rice, bread, cereal, and pasta.</p>
+                                <hr>
+                                <p>*Save food scraps in a container in the fridge/freezer and feed once a week.</p>
+                                <hr>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section2" class="scroll-triggered">
+                <div class="container">
+                    <div class="row">
+                        <div class="one-half jd-contentblock-image">
+                            <img src="img/step5.png" width="500px" height="500px" alt="step5">
+                        </div>
+                            <div class="one-half jd-contentblock-text">
+                                <h3>STEP 5. SHREDDED PAPER</h3>
+                                <hr>
+                                <p>Cover the food completely with a layer of shredded office paper, newspaper, or cardboard.</p>
+                                <hr>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section2" class="scroll-triggered">
+                <div class="container">
+                    <div class="row">
+                        <div class="one-half jd-contentblock-image">
+                            <img src="img/step6.png" width="500px" height="500px" alt="step6">
+                        </div>
+                            <div class="one-half jd-contentblock-text">
+                                <h3>STEP 6. BIN BLANKET</h3>
+                                <hr>
+                                <p>Top the bin with a bin blanket of shadecloth. Cover with the plastic bin lid (optional). </p>
+                                <hr>
+                            </div>
+                    </div>
+                </div>
+            </section>
+    
+            </section>
 
         <section id="section2" class="scroll-triggered">
             <div class="container">
 
                 <div class="row swapped">
                     <div class="one-half jd-contentblock-image">
-                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
-                    </div>
+                        
+                          <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="img/drawstringbag-pattern3.png" width="650px" height="650px" alt="drawstring bag of worms">
+                </div>
+                <!-- <div class="swiper-slide">
+                    <img src="img/greenbin.png" width="650px" height="650px" alt="green composting bin">
+                </div> -->
+                <div class="swiper-slide">
+                    <img src="img/fabricsack.png" width="650px" height="650px" alt="fabric sack of compost">
+                </div>
+                <!-- <div class="swiper-slide">
+                    <img src="img/cat4.jpg" alt="Cute in a basket">
+                </div> -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+                        <!-- <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
+                    </div> -->
                     <div class="one-half jd-contentblock-text">
-                        <h3>RESOURCES</h3>
+                        <h3>WORM KITS</h3>
                         <hr>
-                        <details>
-                            <summary>Worm Kits</summary>
-                            <p>Each kit comes with bedding, food, a bin, instructions, and most importantly, 100 composting worms!</p>
-                        </details>
-                        <hr>
-                        <details>
-                            <summary>Worm Chow & Bedding</summary>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, atque?</p>
-                        </details>
-                        <hr>
-                        <details>
-                            <summary>Compost</summary>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, atque?</p>
-                        </details>
-                        <hr>
-                        <details>
-                            <summary>Merchandise</summary>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, atque?</p>
-                        </details>
+                            
+                            <p>Each kit comes with bedding, food, a bin, step-by-step instructions, and 100 composting worms!</p>
+
                         <hr>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- <section id="section3" class="scroll-triggered">
-            <div class="container">
-
-                <div class="row stacked">
-                    <div class="one-half jd-contentblock-image">
-                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
-                        <div class="jd-character">
-                            <svg height="100" width="100">
-                                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="one-half">
-                        <h3>Section 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsum dolor cupiditate,
-                            voluptatum dolore
-                            minus animi optio nam voluptatem sit ipsam qui expedita molestiae nobis.</p>
-                        <a href="#" class="button">Button</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main> -->
 
     <div class="contactus">
-        <div class="container full-width">
-            <div class="row">
-                <div class="one-third column">
+            <div class="contact_us">
                 <h3>CONTACT US</h3>
                 <p>MONDAY - FRIDAY 8AM - 5PM</p>
                     2444 Hihiwai Street<br>
@@ -169,11 +251,10 @@
                 </number>
             </div>
 
-            <div class="one-third column">
+            <div class="logo">
             <a href="index.html"><img src="img/happywormslogo-05.png" width="200" height="200" alt="Happy Worms Logo"></a>
             </div>
-
-            <div class="one-third column">
+            <div class="form">
                 <h4>Our vermicomposting <br> community welcomes you!</h4><br>
                 <p>Follow our worm raising tips,<br> inclusing how to set up and<br> manage your worm bin.</p>
                 
@@ -193,13 +274,32 @@
 <hr>
 
     <div class="footer">
-        <div class="container full-width">
-    <div class="one-half column">
+            <div class="row social-icons">
+    <!-- <div class="one-half column"> -->
         <p>Happy Worms © 2022. ALL RIGHTS RESERVED.</p>
-    </div>
-    <div class="one-half column">
-
-    </div>
+    <!-- </div> -->
+    <!-- <div class="one-half column"> -->
+        <ul class="wrapper">
+            <li class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </li>
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><i class="fab fa-instagram"></i></span>
+            </li>
+            <li class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <span><i class="fab fa-youtube"></i></span>
+            </li>
+            
+            <li class="icon tiktok">
+              <span class="tooltip">TikTok</span>
+              <span><i class="fab fa-tiktok"></i></span>
+            </li>
+          </ul>
+    <!-- </div> -->
+</div>
         <!-- <a href="#">
             <img src="img/instagram.png" alt="Happy Worms Instagram" style="width:50px;height:50px;">
           </a>
@@ -231,6 +331,9 @@
             speedAsDuration: true
         });
     </script>
+
+    <!-- SWIPER JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   
   <script>
   function change_myselect(sel) {
@@ -251,8 +354,14 @@
   }
   </script>
 
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"></script>
+  <!-- <script src="js/bodymovin.js"></script> -->
+  <script src="js/index.js"></script>
+
     <!-- MAIN JS SCRIPT -->
     <script src="js/script.js"></script>
+
 
 </body>
 

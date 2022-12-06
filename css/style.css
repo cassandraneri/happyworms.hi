@@ -58,6 +58,13 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
   font-size: 3em;
   line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1em;
 }
 
 h2 {
@@ -72,7 +79,7 @@ h3 {
 
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
 p {
-  max-width: 30em;
+  max-width: 45em;
 }
 
 /* HORIZONTAL LINE */
@@ -139,7 +146,7 @@ body {
 /* CONTAINER */
 .container {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1400px;
   padding: 0 1em;
 }
 
@@ -171,7 +178,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3em;
+  padding: 4em;
 }
 .row > * {
   margin: 1%;
@@ -249,7 +256,8 @@ body {
 }
 
 /* FULL WIDTH CONTAINER FIX */
-.container-fullwidth .row {
+.container.full-width .row {
+  margin-top: 0;
   margin-left: 0;
   margin-right: 0;
 }
@@ -305,8 +313,8 @@ body {
 }
 
 section {
-  padding: 4em 0;
-  min-height: 100vh;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,6 +358,19 @@ section {
   width: 100%;
 }
 
+html,
+body {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+#bm1 {
+  width: 100%;
+}
+
 /* SITE-FOOTER */
 .site-footer {
   background-color: rgb(239, 229, 219);
@@ -364,6 +385,157 @@ section {
 .site-footer a {
   color: white;
   text-decoration: none;
+}
+
+.contactus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4em;
+}
+
+/* MY SWIPER ADJUSTMENTS */
+.swiper {
+  --swiper-theme-color: black;
+}
+
+/* SOCIAL MEDIA */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden x;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  -webkit-transform: translate(-50%) rotate(45deg);
+          transform: translate(-50%) rotate(45deg);
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #C13584;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
+
+.wrapper .tiktok:hover,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip::before {
+  background: #00f2ea;
+  color: #ff0050;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.icon-hover {
+  width: 100%;
+  cursor: pointer;
+  display: inline-block;
 }
 
 /* SITE-NAV */

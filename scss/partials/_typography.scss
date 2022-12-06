@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6, p { margin: 0 0 .5em 0; }
 h1 {
     font-size: 3em;
     line-height: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
 }
 h2 {
     font-size: 2.25em;
@@ -29,7 +32,7 @@ h3 {
 }
 
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
-p { max-width: 30em; }
+p { max-width: 45em; }
 
 /* HORIZONTAL LINE */ 
 hr {

@@ -8,8 +8,7 @@ $gridgap: 2%;
     margin-left: -($gridgap / 2);
     margin-right: -($gridgap / 2);
     align-items: center;
-    margin-bottom: 3em;
-
+    padding: 4em;
     > * {
        margin: ($gridgap / 2);
        flex-grow: 1;
@@ -66,9 +65,10 @@ $gridgap: 2%;
 
 /* FULL WIDTH CONTAINER FIX */
 
-.container-fullwidth {
+.container.full-width {
 
     .row {
+        margin-top: 0;
         margin-left: 0;
         margin-right: 0;
     }
