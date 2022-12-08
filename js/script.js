@@ -54,3 +54,5 @@ const myobserver = new IntersectionObserver((entries) => {
       el: '.swiper-scrollbar',
     },
   });
+
+ 

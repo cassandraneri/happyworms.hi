@@ -18,7 +18,7 @@
     }
 
     a {
-        color: white;
+        color: #f27f7a;
         text-decoration: none;
     }
 
@@ -26,6 +26,10 @@
         font-size: 1.5em;
         margin: 0;
     }
+}
+
+.site-main {
+  background-color: rgba(239, 229, 219, 1);
 }
 
 /* SITE-NAV */
@@ -52,12 +56,15 @@ section {
     align-items: center;
 }
 
+#section2 {
+  background-color: rgba(239, 229, 219, 1);
+}
 
 
 /* HERO SECTION */
 
 .hero {
-    background-color: rgba(239, 229, 219, 1);
+    background-color: white;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -112,6 +119,11 @@ body {
 }
 
 /* SITE-FOOTER */
+.footer {
+  padding-top: 0;
+  padding: 0 4em;
+}
+
 .site-footer {
     background-color: rgba(239, 229, 219, 1);
     display: flex;
@@ -128,7 +140,7 @@ body {
 .contactus {
   display: flex;
   justify-content: space-between;
-  padding: 4em;
+  padding: 2em 4em;
 }
 
 /* MY SWIPER ADJUSTMENTS */
@@ -140,7 +152,6 @@ body {
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   overflow: hidden x;
 }
@@ -243,6 +254,11 @@ body {
 .social-icons {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+  padding-bottom: 2em;
 }
 
 // div.container.full-width {

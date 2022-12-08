@@ -21,7 +21,7 @@
     .site-nav {
  
         ul {
-            background: rgba(187, 193, 145, 1);
+            background: rgba(239, 229, 219, 1);
             position: fixed;
             top: 0;
             right: 0;
@@ -71,7 +71,7 @@
         .menu-button {
             background-color: transparent;
             border: none;
-            color: white;
+            color: #f27f7a;
             padding: .7em;
             position: relative;
             z-index: 200;
@@ -80,7 +80,7 @@
                 display: block;
 
                 rect {
-                    fill: white;
+                    fill: #f27f7a;
                 }
             }
 

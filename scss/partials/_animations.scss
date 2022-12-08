@@ -35,7 +35,7 @@
 /* ANIMATE SECTION 1 ON SCROLL */
 #section1.scroll-triggered[data-sectionstate="inactive"] {
 
-    background-color: #888;
+    background-color: #fff;
 
     .jd-contentblock-image {
         transform: translateY(200px);
@@ -49,7 +49,7 @@
 
 #section1.scroll-triggered[data-sectionstate="active"] {
 
-    background-color: #eee;
+    background-color: #fff;
     transition: all 1s ease-out;
 
     .jd-contentblock-image {
