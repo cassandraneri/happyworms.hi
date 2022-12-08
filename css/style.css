@@ -299,9 +299,14 @@ body {
 
 .site-main {
   background-color: rgb(239, 229, 219);
+  overflow-x: hidden;
 }
 
 /* SITE-NAV */
+.site-nav {
+  z-index: 20;
+  background: transparent;
+}
 .site-nav ul {
   margin: 0;
   padding: 0;
@@ -364,6 +369,7 @@ section {
 .hero-video {
   position: absolute;
   width: 100%;
+  z-index: -1;
 }
 
 html,
@@ -381,6 +387,7 @@ body {
 
 /* SITE-FOOTER */
 .footer {
+  background-color: rgb(239, 229, 219);
   padding-top: 0;
   padding: 0 4em;
 }
@@ -400,7 +407,7 @@ body {
   text-decoration: none;
 }
 
-.contactus {
+#contactus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,7 +560,6 @@ body {
 
 .icon-hover {
   width: 100%;
-  cursor: pointer;
   display: inline-block;
 }
 
@@ -573,7 +579,7 @@ body {
 }
 
 .site-header .site-nav ul {
-  background: rgb(239, 229, 219);
+  background: transparent;
   position: fixed;
   top: 0;
   right: 0;
@@ -892,33 +898,33 @@ body {
   }
 }
 /* ANIMATE SECTION 1 ON SCROLL */
-#section1.scroll-triggered[data-sectionstate=inactive] {
+.hw-animate-down.scroll-triggered[data-sectionstate=inactive] {
   background-color: #fff;
 }
-#section1.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-image {
+.hw-animate-down.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-image {
   -webkit-transform: translateY(200px);
           transform: translateY(200px);
   opacity: 0;
 }
-#section1.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-text {
+.hw-animate-down.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-text {
   -webkit-transform: translateY(-200px);
           transform: translateY(-200px);
   opacity: 0;
 }
 
-#section1.scroll-triggered[data-sectionstate=active] {
+.hw-animate-down.scroll-triggered[data-sectionstate=active] {
   background-color: #fff;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-#section1.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
+.hw-animate-down.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-#section1.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
+.hw-animate-down.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
@@ -927,25 +933,25 @@ body {
 }
 
 /* ANIMATE SECTION 2 ON SCROLL */
-#section2.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-image {
+.hw-animate-from-side.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-image {
   -webkit-transform: translateX(-200px);
           transform: translateX(-200px);
   opacity: 0;
 }
-#section2.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-text {
+.hw-animate-from-side.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-text {
   -webkit-transform: translateX(200px);
           transform: translateX(200px);
   opacity: 0;
 }
 
-#section2.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
+.hw-animate-from-side.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
   opacity: 1;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
   -webkit-transition: all 1s ease-out 0.5s;
   transition: all 1s ease-out 0.5s;
 }
-#section2.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
+.hw-animate-from-side.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
   opacity: 1;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
