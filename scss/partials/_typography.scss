@@ -1,18 +1,67 @@
+/* @FONT FACE */
+@font-face {
+    font-family: 'MADEMellowPERSONALUSEBold';
+    src: url('fonts/MADEMellowPERSONALUSEBold.eot');
+    src: url('fonts/MADEMellowPERSONALUSEBold.eot') format('embedded-opentype'),
+        url('fonts/MADEMellowPERSONALUSEBold.woff2') format('woff2'),
+        url('fonts/MADEMellowPERSONALUSEBold.woff') format('woff'),
+        url('fonts/MADEMellowPERSONALUSEBold.ttf') format('truetype'),
+        url('fonts/MADEMellowPERSONALUSEBold.svg#MADEMellowPERSONALUSEBold') format('svg');
+}
+
+@font-face {
+    font-family: 'MADEMellowPERSONALUSERegular';
+    src: url('fonts/MADEMellowPERSONALUSERegular.eot');
+    src: url('fonts/MADEMellowPERSONALUSERegular.eot') format('embedded-opentype'),
+        url('fonts/MADEMellowPERSONALUSERegular.woff2') format('woff2'),
+        url('fonts/MADEMellowPERSONALUSERegular.woff') format('woff'),
+        url('fonts/MADEMellowPERSONALUSERegular.ttf') format('truetype'),
+        url('fonts/MADEMellowPERSONALUSERegular.svg#MADEMellowPERSONALUSERegular') format('svg');
+}
 
 /* BASE TEXT COLORS */
-body { color: $color-text-body; }
-h1, h2, h3, h4, h5, h6 { color: $color-text-headings; }
+body {
+    color: $color-text-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-text-headings;
+}
 
 /* BASE TEXT FONTS */
-body {  font-family: $font-family-sans; }
-h1, h2, h3, h4, h5, h6 { font-family: $font-family-serif; }
+body {
+    font-family: $font-family-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-serif;
+}
 
 /* BASE TYPOGRAPHY */
 body {
     font-size: 100%;
     line-height: 1.4;
 }
-h1, h2, h3, h4, h5, h6, p { margin: 0 0 .5em 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 0 .5em 0;
+}
 
 /* TRADITIONAL TYPOGRAPHIC SCALE */
 h1 {
@@ -22,23 +71,27 @@ h1 {
     justify-content: center;
     padding-top: 1em;
 }
+
 h2 {
     font-size: 2.25em;
     line-height: 1.1;
 }
+
 h3 {
     font-size: 1.5em;
     line-height: 1.2;
 }
 
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
-p { max-width: 45em; }
+p {
+    max-width: 45em;
+}
 
-/* HORIZONTAL LINE */ 
+/* HORIZONTAL LINE */
 hr {
     border: 0;
     height: 1px;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0, 0, 0, .1);
     margin: 1em 0;
 }
 
@@ -52,7 +105,7 @@ hr {
 }
 
 .subheadline {
-    font-weight: normal; 
+    font-weight: normal;
     font-size: 2.5em;
     line-height: 1.1;
     color: $color-lightgrey;

@@ -26,12 +26,28 @@ TABLE OF CONTENTS
 
 
 */
+/* @FONT FACE */
+@font-face {
+  font-family: "MADEMellowPERSONALUSEBold";
+  src: url("fonts/MADEMellowPERSONALUSEBold.eot");
+  src: url("fonts/MADEMellowPERSONALUSEBold.eot") format("embedded-opentype"), url("fonts/MADEMellowPERSONALUSEBold.woff2") format("woff2"), url("fonts/MADEMellowPERSONALUSEBold.woff") format("woff"), url("fonts/MADEMellowPERSONALUSEBold.ttf") format("truetype"), url("fonts/MADEMellowPERSONALUSEBold.svg#MADEMellowPERSONALUSEBold") format("svg");
+}
+@font-face {
+  font-family: "MADEMellowPERSONALUSERegular";
+  src: url("fonts/MADEMellowPERSONALUSERegular.eot");
+  src: url("fonts/MADEMellowPERSONALUSERegular.eot") format("embedded-opentype"), url("fonts/MADEMellowPERSONALUSERegular.woff2") format("woff2"), url("fonts/MADEMellowPERSONALUSERegular.woff") format("woff"), url("fonts/MADEMellowPERSONALUSERegular.ttf") format("truetype"), url("fonts/MADEMellowPERSONALUSERegular.svg#MADEMellowPERSONALUSERegular") format("svg");
+}
 /* BASE TEXT COLORS */
 body {
   color: rgba(0, 0, 0, 0.8);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: rgb(0, 0, 0);
 }
 
@@ -40,8 +56,13 @@ body {
   font-family: "Omnes", "new-hero", Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Bookmania", "Times New Roman", Times, serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "MADEMellowPERSONALUSEBold", Times New Roman, Times, serif;
 }
 
 /* BASE TYPOGRAPHY */
@@ -50,7 +71,13 @@ body {
   line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0 0 0.5em 0;
 }
 
@@ -357,6 +384,7 @@ section {
 .hero h1 {
   color: rgb(0, 0, 0);
   margin-bottom: 0.25em;
+  font-size: 5em;
 }
 .hero p {
   margin: 1em auto;
@@ -364,6 +392,7 @@ section {
 .hero h4 {
   font-family: omnes-pro, sans-serif;
   font-weight: 500;
+  font-size: 2em;
   padding-bottom: 1em;
 }
 
@@ -517,29 +546,29 @@ body {
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-  background: #1877F2;
+  background: #f27f7a;
   color: #ffffff;
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: #C13584;
+  background: #f27f7a;
   color: #ffffff;
 }
 
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
-  background: #CD201F;
+  background: #f27f7a;
   color: #ffffff;
 }
 
 .wrapper .tiktok:hover,
 .wrapper .tiktok:hover .tooltip,
 .wrapper .tiktok:hover .tooltip::before {
-  background: #00f2ea;
-  color: #ff0050;
+  background: #f27f7a;
+  color: #ffffff;
 }
 
 .social-icons {
@@ -561,6 +590,22 @@ body {
 .icon-hover {
   width: 100%;
   display: inline-block;
+  position: relative;
+}
+
+#aboutus {
+  margin: 5em 0;
+  padding: 5em 0;
+}
+
+img.worminapple {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
 }
 
 /* SITE-NAV */
@@ -579,7 +624,7 @@ body {
 }
 
 .site-header .site-nav ul {
-  background: transparent;
+  background: white;
   position: fixed;
   top: 0;
   right: 0;
